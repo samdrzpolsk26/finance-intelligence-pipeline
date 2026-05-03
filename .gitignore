@@ -1,0 +1,59 @@
+# ============================================================
+# Finance Intelligence Pipeline — .gitignore
+# ============================================================
+
+# Environment & secrets — NEVER commit these
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ML Models — can be large, regenerate with pipeline.py --train-ml
+models/*.pkl
+models/*.json
+models/*.cbm
+models/prophet_*/
+
+# Data — contains personal financial data, NEVER commit
+data/
+*.pdf
+outputs/*.log
+
+# Reports — regenerated automatically
+reports/figures/*.png
+reports/figures/*.svg
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log

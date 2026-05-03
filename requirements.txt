@@ -1,0 +1,50 @@
+# ============================================================
+# Finance Intelligence Pipeline — Python Dependencies
+# Python 3.11+
+# ============================================================
+
+# --- PDF Parsing ---
+pdfplumber==0.11.4          # PDF text extraction with layout awareness
+
+# --- Data Processing ---
+pandas==2.2.3               # Core data manipulation
+numpy==1.26.4               # Numerical computing
+python-dateutil==2.9.0      # Flexible date parsing
+
+# --- Database ---
+SQLAlchemy==2.0.36          # ORM + connection pooling
+PyMySQL==1.1.1              # MySQL driver (pure Python)
+cryptography==43.0.3        # Required by PyMySQL for auth_plugin
+
+# --- Machine Learning ---
+scikit-learn==1.5.2         # Preprocessing, metrics, cross-validation
+xgboost==2.1.3              # Gradient boosting for regression
+prophet==1.1.6              # Time series forecasting (Meta)
+shap==0.46.0                # Model explainability
+
+# --- Visualization ---
+matplotlib==3.9.2           # Core plotting
+seaborn==0.13.2             # Statistical visualizations
+plotly==5.24.1              # Interactive charts
+
+# --- Automation & Scheduling ---
+APScheduler==3.10.4         # Background job scheduler
+watchdog==5.0.3             # File system event monitoring
+
+# --- Configuration ---
+python-dotenv==1.0.1        # .env file loading
+pydantic==2.9.2             # Config validation
+
+# --- Utilities ---
+loguru==0.7.2               # Superior logging
+rich==13.9.4                # Beautiful terminal output
+click==8.1.7                # CLI interface
+tqdm==4.67.0                # Progress bars
+joblib==1.4.2               # Model serialization
+
+# --- Email Notifications (optional) ---
+secure-smtplib==0.1.1       # Secure SMTP for alerts
+
+# --- Testing ---
+pytest==8.3.3
+pytest-cov==5.0.0
